@@ -59,8 +59,14 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    background-color: #c7c7c7;
 }
 .footer {
   position: absolute;
@@ -69,3 +75,62 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+  /*Trabalho anterior*/
+
+.linha2 {
+    color: #000000;
+    background-color: #c7c7c7;
+}
+
+    .linha2 a {
+        color: #42342F;
+    }
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    background-color: #c7c7c7;
+}
+
+#conteudo {
+    padding: 30px 0;
+}
+
+    #conteudo section {
+        display: block;
+        width: 100%;
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+
+    #conteudo .last {
+        margin: 0;
+    }
+
+    #conteudo .more {
+        text-align: right;
+    }
+
+    /* ------Imagem-----*/
+
+    #conteudo #slider #sliderpeq {
+        margin: 7px auto;
+    }
