@@ -9,32 +9,62 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
-            <div class="container">
-                <button type="button" class="btn btn-light">
-                    <a asp-area="" asp-controller="Home" asp-action="Index">Site Pessoal</a>
-                </button>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+                <div class="container">
+                    <button type="button" class="btn btn-light">
+                        <p asp-area="" asp-controller="Home" asp-action="Index">Site Pessoal</p>
                     </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Apresentação</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Currículo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Anexos</a>
-                            </li>
-                        </ul>
-                    </div>
-</div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                            <ul class="navbar-nav flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link float-md-left text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Apresentação</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link float-md-left text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Currículo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link float-md-left text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link float-md-left text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Anexos</a>
+                                </li>
+                            </ul>
+                        </div>
+                 </div>
+            </nav>*@
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Site Pessoal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home Page <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apresentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Currículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anexos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Cotancto" asp-action="Contacto">Contacto</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0 text-white" type="submit">Procurar</button>
+                </form>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -44,11 +74,12 @@
     </div>
 
     <footer class="border-top footer text-muted bg-dark">
-        <div class="container text-center">
-            <p class="float-md-left text-white">Copyright &copy; 2020 - All Rights Reserved - <a href="https://www.facebook.com/nicolau.barranha/">Nicolau Barranha</a></p>
-            <p class="float-md-right text-white">Template by <a href="https://www.facebook.com/nicolau.barranha/" title="Facebook Autora">Nicolau Barranha</a></p>
-        </div>
+                <div class="container text-center">
+                    <p class="float-md-left text-white">Copyright &copy; 2020 - All Rights Reserved - <a href="https://www.facebook.com/nicolau.barranha/">Nicolau Barranha</a></p>
+                    <p class="float-md-right text-white">Template by <a href="https://www.facebook.com/nicolau.barranha/" title="Facebook Autora">Nicolau Barranha</a></p>
+                </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
