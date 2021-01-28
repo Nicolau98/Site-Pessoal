@@ -9,4 +9,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Apresentação\" />
+    <Folder Include="Views\Currículo\" />
+    <Folder Include="Views\Anexos\" />
+  </ItemGroup>
+
 </Project>
