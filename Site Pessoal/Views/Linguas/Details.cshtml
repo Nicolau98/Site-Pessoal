@@ -1,0 +1,54 @@
+﻿@model Site_Pessoal.Models.Linguas
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Linguas</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lingua)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lingua)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Coral)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Coral)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Leitura)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Leitura)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Poral)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Poral)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ioral)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ioral)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Escrita)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Escrita)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.LinguasId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

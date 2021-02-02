@@ -15,5 +15,7 @@ namespace Site_Pessoal.Data
         }
 
         public DbSet<Site_Pessoal.Models.Experiencia> Experiencia { get; set; }
+
+        public DbSet<Site_Pessoal.Models.Linguas> Linguas { get; set; }
     }
 }
