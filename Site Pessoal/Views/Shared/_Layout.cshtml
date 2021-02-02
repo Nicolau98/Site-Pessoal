@@ -9,33 +9,6 @@
 </head>
 <body>
     <header>
-        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
-                <div class="container">
-                    <button type="button" class="btn btn-light">
-                        <p asp-area="" asp-controller="Home" asp-action="Index">Site Pessoal</p>
-                    </button>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                            <ul class="navbar-nav flex-grow-1">
-                                <li class="nav-item">
-                                    <a class="nav-link float-md-left text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Apresentação</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link float-md-left text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Currículo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link float-md-left text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Contacto</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link float-md-left text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Anexos</a>
-                                </li>
-                            </ul>
-                        </div>
-                 </div>
-            </nav>*@
         <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Site Pessoal</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,16 +18,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home Page <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home Page<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Apresentação</a>
+                        <a class="nav-link" asp-controller="Apresentação" asp-action="Index">Apresentação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Currículo</a>
+                        <a class="nav-link" asp-controller="Currículo" asp-action="Index">Currículo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Anexos</a>
+                        <a class="nav-link" asp-controller="Anexos" asp-action="Index">Anexos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-area="" asp-controller="Contacto" asp-action="Index">Contacto</a>

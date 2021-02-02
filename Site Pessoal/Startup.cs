@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Site_Pessoal.Data;
 
 namespace Site_Pessoal
 {
@@ -24,6 +26,9 @@ namespace Site_Pessoal
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<Site_PessoalContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Site_PessoalContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
