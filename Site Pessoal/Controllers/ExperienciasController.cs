@@ -6,8 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Site_Pessoal.Data;
+using Site_Pessoal.Models;
 
-namespace Site_Pessoal.Models
+namespace Site_Pessoal.Controllers
 {
     public class ExperienciasController : Controller
     {
@@ -53,7 +54,7 @@ namespace Site_Pessoal.Models
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ExperienciaId,Nome,Desccricao")] Experiencia experiencia)
+        public async Task<IActionResult> Create([Bind("ExperienciaId,Nome,Descricao,Data_Inicio,Data_Fim")] Experiencia experiencia)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +86,7 @@ namespace Site_Pessoal.Models
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ExperienciaId,Nome,Desccricao")] Experiencia experiencia)
+        public async Task<IActionResult> Edit(int id, [Bind("ExperienciaId,Nome,Descricao,Data_Inicio,Data_Fim")] Experiencia experiencia)
         {
             if (id != experiencia.ExperienciaId)
             {

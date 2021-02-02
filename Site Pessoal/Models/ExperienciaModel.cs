@@ -15,6 +15,14 @@ namespace Site_Pessoal.Models
         [StringLength(100)]
         public string Nome { get; set; }
 
-        public string Desccricao { get; set; }
+        [Required]
+        public string Descricao { get; set; }
+
+        [Required]
+        [StringLength(10)]
+        public string Data_Inicio { get; set; }
+
+        [StringLength(10)]
+        public string Data_Fim { get; set; }
     }
 }

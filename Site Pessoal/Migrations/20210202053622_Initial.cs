@@ -13,7 +13,9 @@ namespace Site_Pessoal.Migrations
                     ExperienciaId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(maxLength: 100, nullable: false),
-                    Desccricao = table.Column<string>(nullable: true)
+                    Descricao = table.Column<string>(nullable: false),
+                    Data_Inicio = table.Column<string>(maxLength: 10, nullable: false),
+                    Data_Fim = table.Column<string>(maxLength: 10, nullable: true)
                 },
                 constraints: table =>
                 {
