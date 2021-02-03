@@ -23,9 +23,21 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="Apresentação" asp-action="Index">Apresentação</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Currículo" asp-action="Index">Currículo</a>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" asp-controller="Currículo" asp-action="Index">
+                            Currículo
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" asp-controller="Experiencias" asp-action="Index">Experiência Profissional</a>
+                            <a class="dropdown-item" href="#">Educação e Formação</a>
+                            <a class="dropdown-item" asp-controller="Linguas" asp-action="Index">Línguas</a>
+                            <a class="dropdown-item" href="#">Carta de Condução</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Tudo</a>
+                        </div>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="Anexos" asp-action="Index">Anexos</a>
                     </li>

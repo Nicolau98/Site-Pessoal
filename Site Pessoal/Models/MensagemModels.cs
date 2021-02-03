@@ -24,6 +24,6 @@ namespace Site_Pessoal.Models
 
         [Required]
         [Display(Name = "Mensagem")]
-        public string MensagemT { get; set; }
+        public string MensagemTexto { get; set; }
     }
 }
