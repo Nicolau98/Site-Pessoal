@@ -4,12 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1></h1>
+<h3>Línguas</h3>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a type="button" class="btn btn-outline-dark" asp-action="Create">Criar</a>
 </p>
-<table class="table">
+<table class="table table-dark">
     <thead>
         <tr>
             <th>
@@ -55,9 +56,9 @@
                 @Html.DisplayFor(modelItem => item.Escrita)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.LinguasId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.LinguasId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.LinguasId">Delete</a>
+                <a type="button" class="btn btn-outline-dark text-white" asp-action="Edit" asp-route-id="@item.LinguasId">Editar</a> |
+                @*<a type="button" class="btn btn-outline-dark text-white" asp-action="Details" asp-route-id="@item.LinguasId">Details</a> |*@
+                <a type="button" class="btn btn-outline-dark text-white" asp-action="Delete" asp-route-id="@item.LinguasId">Apagar</a>
             </td>
         </tr>
 }
